@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler collapse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+    
+        <div class="navbar-collapse show" id="navbarSupportedContent" style>
+            <ul class="navbar-nav mb-1">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Perfil
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.html" data-bs-toggle="" data-bs-target="#Salir">salir</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--Menu-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html"> Municipios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Manzanas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Módulo de Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Módulo de Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Módulo de Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Módulo de Pedidos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <!--Fin Menu-->
+                
+                 <!-- registro-municipios -->
+<div class="container">
+    <h1>Registro de Municipios</h1>
+    <form id="registro-municipio-form">
+      <div class="form-group">
+        <label for="codigo-municipio">Código del Municipio</label>
+        <input type="text" class="form-control" id="codigo-municipio" required>
+      </div>
+      <div class="form-group">
+        <label for="nombre-municipio">Nombre del Municipio</label>
+        <input type="text" class="form-control" id="nombre-municipio" required>
+      </div>
+      <div class="form-group">
+        <label for="departamento-municipio">Departamento/Provincia</label>
+        <input type="text" class="form-control" id="departamento-municipio" required>
+      </div>
+      <div class="form-group">
+        <label for="pais-municipio">Direccion</label>
+        <input type="text" class="form-control" id="pais-municipio" required><br>
+      </div>
+      <button type="submit" class="btn btn-primary">Registrar Municipio</button>
+    </form>
+  </div>
+  <!--fin regsitro de municipio-->
+  <div class="container">
+    <h1 class="my-4 text-center">Manzanas en el Mapa</h1>
+   <!-- Contenedor del mapa y la tarjeta de información -->
+<div class="container">
+    <!-- Mapa de Google Maps -->
+     <di class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.877791300943!2d-75.62896672309124!3d2.199887558250145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e24d985e72b920f%3A0x47ae9b5b47ce6850!2sSENA%20-%20GARZON!5e0!3m2!1ses-419!2sco!4v1716432644929!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+</di>
+</div>
+</div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>
