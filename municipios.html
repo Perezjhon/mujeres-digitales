@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler collapse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+    
+        <div class="navbar-collapse show" id="navbarSupportedContent" style>
+            <ul class="navbar-nav mb-1">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Perfil
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.html" data-bs-toggle="" data-bs-target="#Salir">salir</a></li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!--Menu-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="municipios.html"> Municipios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="manzans.html">Manzanas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Módulo de Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Módulo de Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Módulo de Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Módulo de Pedidos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <!--Fin Menu-->
+                
+                 <!-- registro-municipios -->
+<div class="container">
+    <h1>Registro de Municipios</h1>
+    <form id="registro-municipio-form">
+      <div class="form-group">
+        <label for="codigo-municipio">Código del Municipio</label>
+        <input type="text" class="form-control" id="codigo-municipio" required>
+      </div>
+      <div class="form-group">
+        <label for="nombre-municipio">Nombre del Municipio</label>
+        <input type="text" class="form-control" id="nombre-municipio" required>
+      </div>
+      <div class="form-group">
+        <label for="departamento-municipio">Departamento/Provincia</label>
+        <input type="text" class="form-control" id="departamento-municipio" required>
+      </div>
+      <div class="form-group">
+        <label for="pais-municipio">Direccion</label>
+        <input type="text" class="form-control" id="pais-municipio" required><br>
+      </div>
+      <button type="submit" class="btn btn-primary">Registrar Municipio</button><br><br>
+    </form>
+  </div>
+</div>
+<table class="container">
+    <div class="col-md-2">
+        <div class="mb-3">
+        </div>
+    </div>
+    <thead>
+        <tr>
+            <th>codigo de Municipio</th>
+            <th>imagen del Municipio</th>
+            <th>Nombre del Municipio</th>
+            <th>Direccion</th>
+            <th>Acciones</th>
+            
+        </tr>
+    </thead>
+    <body>
+        <tr>
+            <td>01</td>
+            <td><div class="card" style="width: 5rem;">
+                <img src="" class="card-img-top" alt="...">
+                <div class="card-body">
+                </div>
+              </div></td>
+            <td>...</td>
+            <td>....</td>
+            <td>
+              
+<!-- Button  editar -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+Editar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <h1 class="modal-title fs-5" id="staticBackdropLabel">Editar Municipio</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+
+    <!-- forms -->
+   <form>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">cambiar nombre</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Cambiar Direccion </label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    
+
+  </form>
+  <!-- fin forms -->
+  
+
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+    <button type="button" class="btn btn-primary">Guardar Cambios</button>
+  </div>
+</div>
+</div>
+</div>
+<!--fin button editar-->
+
+<!--button eliminar-->
+<button type="button2" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar">
+Eliminar 
+</button>
+<!-- Modal -->
+<div class="modal fade" id="eliminar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="eliminar" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+  <div class="modal-header">
+    <h1 class="modal-title fs-5" id="staticBackdropLabel">Eliminar Municipio</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+  <div class="modal-body">
+  <!-- fin  Modal -->
+
+  <button type="button2" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar">
+    Eliminar
+  </button>
+  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></td>
+            
+  <tr>
+    <td>02</td>
+    <td><div class="card" style="width: 5rem;">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+        </div>
+      </div></td>
+    <td>...</td>
+    <td>....</td>
+    <td>
+      
+<!-- Button  editar -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+Editar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="staticBackdropLabel">Editar Municipio</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<!-- forms -->
+<form>
+<div class="mb-3">
+<label for="exampleInputPassword1" class="form-label">cambiar nombre</label>
+<input type="password" class="form-control" id="exampleInputPassword1">
+</div>
+
+<div class="mb-3">
+<label for="exampleInputPassword1" class="form-label">Cambiar Direccion </label>
+<input type="password" class="form-control" id="exampleInputPassword1">
+</div>
+
+
+</form>
+<!-- fin forms -->
+
+
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+<button type="button" class="btn btn-primary">Guardar Cambios</button>
+</div>
+</div>
+</div>
+</div>
+<!--fin button editar-->
+
+<!--button eliminar-->
+<button type="button2" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar">
+Eliminar 
+</button>
+<!-- Modal -->
+<div class="modal fade" id="eliminar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="eliminar" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="staticBackdropLabel">Eliminar Municipio</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<!-- fin  Modal -->
+
+<button type="button2" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar">
+Eliminar
+</button>
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></td>
+    
+    
+<tr>
+    <td>03</td>
+    <td><div class="card" style="width: 5rem;">
+        <img src="" class="card-img-top" alt="...">
+        <div class="card-body">
+        </div>
+      </div></td>
+    <td>...</td>
+    <td>....</td>
+    <td>
+      
+<!-- Button  editar -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+Editar
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="staticBackdropLabel">Editar Municipio</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+
+<!-- forms -->
+<form>
+<div class="mb-3">
+<label for="exampleInputPassword1" class="form-label">cambiar nombre</label>
+<input type="password" class="form-control" id="exampleInputPassword1">
+</div>
+
+<div class="mb-3">
+<label for="exampleInputPassword1" class="form-label">Cambiar Direccion </label>
+<input type="password" class="form-control" id="exampleInputPassword1">
+</div>
+
+
+</form>
+<!-- fin forms -->
+
+
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+<button type="button" class="btn btn-primary">Guardar Cambios</button>
+</div>
+</div>
+</div>
+</div>
+<!--fin button editar-->
+
+<!--button eliminar-->
+<button type="button2" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar">
+Eliminar 
+</button>
+<!-- Modal -->
+<div class="modal fade" id="eliminar" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="eliminar" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h1 class="modal-title fs-5" id="staticBackdropLabel">Eliminar Municipio</h1>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<!-- fin  Modal -->
+
+<button type="button2" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#eliminar">
+Eliminar
+</button>
+<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button></td>
+    
+        </td>
+        
+    </tr>
+    
+        </table>
+  <!--fin regsitro de municipio-->
+  
+   
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+</body>
+</html>
